@@ -15,6 +15,247 @@
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body class="bg-off-white min-h-dvh">
+    <!-- container -->
+    <div
+      class="mx-auto mb-20 mt-7 max-w-[1110px] px-4 lg:mb-[130px] lg:mt-[89px] xl:px-0"
+    >
+      <header class="mb-8 flex items-center justify-between lg:mb-[55px]">
+        <!-- logo -->
+        <img src="./images/logo.svg" alt="logo" class="w-[45px] lg:w-16" />
+        <!-- logo -->
+
+        <nav>
+          <!-- menu mobile -->
+          <div class="">
+            <img
+              src="./images/icon-menu.svg"
+              alt="icon menu"
+              id="icon-menu"
+              class="cursor-pointer lg:hidden"
+            />
+            <img
+              src="./images/icon-menu-close.svg"
+              alt="icon menu close"
+              class="relative z-30 hidden cursor-pointer"
+              id="icon-menu-close"
+            />
+
+            <!-- overlay -->
+            <div
+              class="bg-very-dark-blue fixed left-0 top-0 z-10 hidden min-h-dvh w-full opacity-50"
+              id="overlay"
+            ></div>
+            <!-- overlay -->
+
+            <!-- menu -->
+            <div
+              class="bg-off-white fixed right-0 top-0 z-20 min-h-dvh w-full transition-[width]"
+              style="width: 0"
+              id="menu-mobile"
+            >
+              <ul
+                class="text-very-dark-blue flex flex-col gap-6 pl-6 pr-[29px] pt-36 text-lg leading-6"
+              >
+                <li>
+                  <a href="#" class="transition-opacity hover:opacity-70"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="transition-opacity hover:opacity-70"
+                    >New</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="transition-opacity hover:opacity-70"
+                    >Popular</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="transition-opacity hover:opacity-70"
+                    >Trending</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="transition-opacity hover:opacity-70"
+                    >Categories</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- menu -->
+          </div>
+          <!-- menu mobile -->
+
+          <!-- menu desktop -->
+          <ul
+            class="text-dark-grayish-blue hidden items-center justify-between gap-10 text-[15px] leading-[26px] lg:flex"
+          >
+            <li>
+              <a href="#" class="hover:text-very-dark-blue transition-colors"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-very-dark-blue transition-colors"
+                >New</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-very-dark-blue transition-colors"
+                >Popular</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-very-dark-blue transition-colors"
+                >Trending</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-very-dark-blue transition-colors"
+                >Categories</a
+              >
+            </li>
+          </ul>
+          <!-- menu desktop -->
+        </nav>
+      </header>
+
+      <main class="grid grid-cols-1 gap-16 lg:gap-[72px]">
+        <section class="grid grid-cols-1 gap-16 lg:grid-cols-3 lg:gap-[30px]">
+          <article
+            class="grid grid-cols-1 gap-4 lg:col-span-2 lg:grid-cols-2 lg:gap-[30px]"
+          >
+            <picture class="lg:col-span-2">
+              <source
+                media="(min-width: 1024px)"
+                srcset="./images/image-web-3-desktop.jpg"
+              />
+              <img src="./images/image-web-3-mobile.jpg" alt="image web 3" />
+            </picture>
+
+            <h1
+              class="text-very-dark-blue mt-2 pr-4 text-[40px] font-extrabold leading-10 lg:mt-0 lg:pr-0 lg:text-[56px] lg:leading-[56px]"
+            >
+              The Bright Future of Web 3.0?
+            </h1>
+
+            <div>
+              <p
+                class="text-dark-grayish-blue mb-6 text-[15px] leading-[26px] lg:mb-[29px]"
+              >
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button
+                class="bg-soft-red text-very-dark-blue flex h-12 w-[185px] items-center justify-center text-sm font-bold leading-6 tracking-[4.375px] transition-opacity hover:opacity-80"
+              >
+                READ MORE
+              </button>
+            </div>
+          </article>
+
+          <aside class="bg-very-dark-blue px-5 py-6 lg:py-8">
+            <h2
+              class="text-soft-orange mb-[35px] text-[32px] font-bold leading-8 lg:mb-[34px] lg:text-[40px] lg:leading-10"
+            >
+              New
+            </h2>
+            <div class="border-dark-grayish-blue mb-[31px] border-b pb-[29px]">
+              <h3 class="text-off-white mb-2 text-xl font-extrabold leading-6">
+                Hydrogen VS Electric Cars
+              </h3>
+              <p class="text-grayish-blue text-[15px] leading-[26px]">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </div>
+            <div class="border-dark-grayish-blue mb-[31px] border-b pb-[29px]">
+              <h3 class="text-off-white mb-2 text-xl font-extrabold leading-6">
+                The Downsides of AI Artistry
+              </h3>
+              <p class="text-grayish-blue text-[15px] leading-[26px]">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </div>
+            <div>
+              <h3 class="text-off-white mb-2 text-xl font-extrabold leading-6">
+                Is VC Funding Drying Up?
+              </h3>
+              <p class="text-grayish-blue text-[15px] leading-[26px]">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </div>
+          </aside>
+        </section>
+
+        <section class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-[30px]">
+          <article class="flex gap-6">
+            <img
+              src="./images/image-retro-pcs.jpg"
+              alt="image retro pc"
+              class="w-[100px]"
+            />
+            <div>
+              <h2 class="text-soft-red mb-3 text-[32px] font-bold leading-8">
+                01
+              </h2>
+              <h3
+                class="text-very-dark-blue mb-[9px] text-lg font-extrabold leading-6"
+              >
+                Reviving Retro PCs
+              </h3>
+              <p class="text-dark-grayish-blue text-[15px] leading-[26px]">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </article>
+          <article class="flex gap-6">
+            <img
+              src="./images/image-top-laptops.jpg"
+              alt="image top laptops"
+              class="w-[100px]"
+            />
+            <div>
+              <h2 class="text-soft-red mb-3 text-[32px] font-bold leading-8">
+                02
+              </h2>
+              <h3
+                class="text-very-dark-blue mb-[9px] text-lg font-extrabold leading-6"
+              >
+                Top 10 Laptops of 2022
+              </h3>
+              <p class="text-dark-grayish-blue text-[15px] leading-[26px]">
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </article>
+          <article class="flex gap-6">
+            <img
+              src="./images/image-gaming-growth.jpg"
+              alt="image gaming growth"
+              class="w-[100px]"
+            />
+            <div>
+              <h2 class="text-soft-red mb-3 text-[32px] font-bold leading-8">
+                03
+              </h2>
+              <h3
+                class="text-very-dark-blue mb-[9px] text-lg font-extrabold leading-6"
+              >
+                The Growth of Gaming
+              </h3>
+              <p class="text-dark-grayish-blue text-[15px] leading-[26px]">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+    <!-- container -->
     <script src="./src/index.js"></script>
   </body>
 </html>
